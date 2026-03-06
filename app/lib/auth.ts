@@ -8,6 +8,9 @@ import bcrypt from "bcrypt";
 
 const prisma = new PrismaClient();
 
+/**
+ * authOptions utility.
+ */
 export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
